@@ -45,7 +45,7 @@ g++ main.cpp -o app -lraylib -lGL -lm -lpthread -ldl -lrt -lX11
 ```
 
 more documentation on raylib can be found here ```https://github.com/raysan5/raylib```
-The reason I opted for raylib over other GUI libraries is its support for 2d and 3d graphics, and since CS 259 is about instancing objects it makes seems like a good fit.
+The reason I opted for raylib over other GUI libraries is its support for 2d and 3d graphics, and since CS 259 is about instancing objects it seems like a good fit.
 # Run the file
 
 ```bash
