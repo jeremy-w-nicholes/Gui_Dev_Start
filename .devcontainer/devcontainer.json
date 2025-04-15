@@ -1,0 +1,25 @@
+{
+    "name": "C++ Dev with noVNC",
+    "image": "mcr.microsoft.com/devcontainers/cpp",
+    "features": {
+      "ghcr.io/devcontainers/features/desktop-lite:1": {
+        "desktop": "xfce",
+        "vnc": true
+      }
+    },
+    "customizations": {
+      "vscode": {
+        "extensions": ["ms-vscode.cpptools"]
+      }
+    },
+    "postCreateCommand": "bash .devcontainer/setup.sh",
+    "forwardPorts": [6080],
+    "portsAttributes": {
+      "6080": {
+        "label": "Desktop",
+        "onAutoForward": "openPreview"
+      }
+    },
+    "remoteUser": "vscode"
+    }
+  
